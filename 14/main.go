@@ -105,21 +105,6 @@ func partOne(s string) int {
 
 	source := pos{0, 500}
 
-	//for i := 0; i <= maxX; i++ {
-	//	for j := firstY; j <= maxY; j++ {
-	//		switch board[i][j] {
-	//		case empty:
-	//			fmt.Print(".")
-	//		case block:
-	//			fmt.Print("#")
-	//		case sand:
-	//			fmt.Print("o")
-	//		}
-	//	}
-	//	fmt.Println()
-	//}
-	//fmt.Println()
-
 	for i := 0; ; i++ {
 		fellOut := addSand(board, source)
 		if fellOut {
@@ -218,21 +203,6 @@ func partTwo(s string) int {
 	}
 
 	source := pos{0, 500}
-
-	//for i := 0; i <= maxX; i++ {
-	//	for j := firstY; j <= maxY; j++ {
-	//		switch board[i][j] {
-	//		case empty:
-	//			fmt.Print(".")
-	//		case block:
-	//			fmt.Print("#")
-	//		case sand:
-	//			fmt.Print("o")
-	//		}
-	//	}
-	//	fmt.Println()
-	//}
-	//fmt.Println()
 
 	for i := 0; ; i++ {
 		fellOut := addSand2(board, source)

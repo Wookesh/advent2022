@@ -276,10 +276,8 @@ func partTwo(s string) int {
 	currentInstructionCycles := 0
 	result := 0
 	for i := 1; i <= 240; i++ {
-		//log.Printf("cycle %v: x: %v, op: %v", i, cpu.X, instructions[currentInstructionIndex])
 		if (i+20)%40 == 0 {
 			signalStrength := i * cpu.X
-			//log.Printf("cycle %v: x: %v, signalStreng: %v", i, cpu.X, signalStrength)
 			result += signalStrength
 		}
 		if cpu.X <= i%40 && i%40 <= cpu.X+2 {

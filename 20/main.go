@@ -161,13 +161,6 @@ func partTwo(s string) int {
 				}
 			}
 		}
-
-		//fmt.Printf("mix: %v, values: ", i+1)
-		//for start, v := true, zeroValue; start || v != zeroValue; v = v.right {
-		//	start = false
-		//	fmt.Printf("%v, ", v.v)
-		//}
-		//fmt.Println()
 	}
 
 	v := zeroValue

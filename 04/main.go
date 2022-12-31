@@ -39,7 +39,6 @@ func partOne(s string) int {
 	for _, l := range strings.Split(s, "\n") {
 		var a, b, c, d int
 		fmt.Sscanf(l, "%v-%v,%v-%v", &a, &b, &c, &d)
-		//fmt.Println(a, b, c, d)
 		if (a <= c && b >= d) || (c <= a && d >= b) {
 			count++
 		}
@@ -54,7 +53,6 @@ func partTwo(s string) int {
 		var a, b, c, d int
 		fmt.Sscanf(l, "%v-%v,%v-%v", &a, &b, &c, &d)
 		if (a < c && b < c) || (d < a && d < b) {
-			//fmt.Println(a, b, c, d)
 			count++
 		}
 		total++

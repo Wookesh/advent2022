@@ -75,10 +75,6 @@ func (b *Board) simulate(c rune) bool {
 		b.currentBlockX = 2
 	}
 
-	//fmt.Printf("Move: %v\n", string(c))
-	//fmt.Print("\n")
-	//fmt.Print(b.String())
-
 	if b.canMove(c) {
 		b.move(c)
 	}

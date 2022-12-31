@@ -110,7 +110,6 @@ func partOne(s string) int {
 		p := queue[0]
 		queue = queue[1:]
 		seen[posInTime{p.pos, p.minute}] = true
-		//log.Printf("queue: %v, depth: %v", len(queue), len(bm.blizardsInTime))
 
 		for _, dir := range directions {
 			newP := p.pos.Move(dir)
@@ -158,17 +157,7 @@ func (b *BlizardsManager) getBlizzards(t int) map[pos][]*Blizard {
 				}
 			}
 		}
-		//for i := 1; i < b.maxX; i++ {
-		//	for j := 1; j < b.maxY; j++ {
-		//		if b, ok := currentBlizzard[pos{i, j}]; ok {
-		//			fmt.Print(len(b))
-		//		} else {
-		//			fmt.Print(".")
-		//		}
-		//	}
-		//	fmt.Print("\n")
-		//}
-		//log.Printf("blizzard at: %v, count: %v", t, len(currentBlizzard))
+
 		b.blizardsInTime[t] = currentBlizzard
 	}
 	return currentBlizzard
@@ -247,7 +236,6 @@ func calculateMoves(bm *BlizardsManager, width, height int, start, end pos, t in
 		p := queue[0]
 		queue = queue[1:]
 		seen[posInTime{p.pos, p.minute}] = true
-		//log.Printf("queue: %v, depth: %v", len(queue), len(bm.blizardsInTime))
 
 		for _, dir := range directions {
 			newP := p.pos.Move(dir)

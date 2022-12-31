@@ -117,12 +117,6 @@ func partOne(s string) int {
 		}
 	}
 
-	//for k, d := range distances {
-	//	for l, di := range d {
-	//		log.Printf("%v -> %v: %v", k, l, di)
-	//	}
-	//}
-
 	return findBestOpening(valves, distances)
 }
 
